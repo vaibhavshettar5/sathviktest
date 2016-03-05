@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Twitter Bootstrap Modal Contact Form Demo</title>
+	<meta name="description" content="Creating Modal Window with Twitter Bootstrap">
+    	<link href="assets/bootstrap.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="assets/bootstrap.min.js"></script>
+  <!-- 	<style type="text/css">
+		body { margin: 50px; background-color:blue; }
+		.well { background: #fff; text-align: center; }
+		.modal { text-align: left; }
+	</style>-->
+
+</head>
+<script type="text/javascript">
+function vb_a()
+{
+alert("your regitation is complate");
+} 
+</script>
+<body>
+
+<div class="container">
+	<div class="well well-large subclass">
+		<h2>Welcome to Registration Form</h2>
+		<div id="form-content" class="modal hide fade in" style="display: none;">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+				<h3>Registration Form</h3>
+			</div>
+			<div class="modal-body vijay">
+				<form class="contact" name="contact">
+					<label class="text" for="name">Your Name</label><br>
+					<input type="text" name="name" class="input-xlarge"><br>
+					<label class="text" for="email">Your E-mail</label><br>
+					<input type="email" name="email" class="input-xlarge"><br>
+					<label class="text" for="name">PH NUM</label><br>
+					<input type="mumber" name="name" class="input-xlarge"><br>
+					<label class="text" for="name">courses</label><br>
+					<input type="text" name="name" class="input-xlarge"><br>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<input class="btn btn-success" onclick="vb_a()" type="submit" value="Send!" id="submit">
+				<a href="#" class="btn" data-dismiss="modal">Nah.</a>
+			</div>
+		</div>
+		<div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary btn-large">Click Here To Reg</a></p></div>
+	</div>
+</div>
+
+</body>
+</html>

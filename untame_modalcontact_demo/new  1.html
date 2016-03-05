@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Form Demo</title>
+	<meta name="description" content="Creating Modal Window with Twitter Bootstrap">
+    	<link href="assets/bootstrap.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="assets/bootstrap.min.js"></script>
+</head>
+<body>
+
+ <div class="container">
+	
+		<div class="su"><h2>Contact us</h2>
+		 <p class="contact-para">Thanks for taking the time to contact us!
+            <br>We do our best to respond to quickly, it could take us 1-2 business days to get back to you. Feel free to say hello!</p>
+        </div>    
+			<form>
+<div class="az">                 
+				 <div class="form-group">
+                  <label for="exampleInputEmail1">Name</label>
+                   <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter the name">
+                   </div>
+					<div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter the Email">
+                   </div>
+					<div class="form-group">
+					<label for="exampleInputPassword1">Enter the message</label>
+					<textarea class="form-control" placeholder="Enter your Message Here" name="cf_message"></textarea>
+					</div>
+ </div>          
+		   </form>		
+					<div id="form-content" class="modal hide fade in" style="display:none;">
+						<div class="modal-header">
+							<a class="close" data-dismiss="modal">×</a>
+				
+							<h5>Message</h5>
+						</div>
+						<div class="modal-body vijay">
+							<form class="contact" name="contact">
+								<p>your message is send</p>
+							</form>
+						</div>
+					</div>
+		<div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary btn-large">Send</a></p></div>
+	
+ </div>
+
+</body>
+</html>
